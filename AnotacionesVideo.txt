@@ -1,0 +1,38 @@
+gem intall rubygems-update (solo si se ha a;adido todas las rutas del sistema ruby).
+esto instala las gemas
+
+Las actualizaciones se gems se hace mediante update_grubygems
+
+para intallar rails desde cmd
+se escribe: gem install rails
+
+para ver las gemas instalasdas se usa el comando gem list
+
+para ver la version de ruby se usa el comando ruby -v
+la versio de rails: rails -v
+
+par crear un nuevo proyecto se usa el comando: rails new [capteta]/[nombre del proyecto]
+
+Aparece al final el error de devkit, se necesita ir a la direccion rubyinstaller.org/downloads y buscar el devkit
+
+PAra inicializar los archivos de extension .dk como el del devkit se usa el comando: ruby [archivo.dk] init
+
+Para comprobar el archivo de instalación ruby [archivo] review
+
+Para arrancar el servidor se ingresa a la carpeta
+y se le ingresa el comando: rails server
+La consola queda cargada siempre para tener el servidor activo. Se puede quebrar con ctrl C
+
+Robot.txt es para los navegadores
+
+PAra iniciar un nuevo controlador, usar en la ubicacion del proyecto el comando:  rails generate controller [nombre_controlador] [nombre_archivo]
+
+Para decirle a Rails que el archivo que he creado es el inicio de mi app, abrimos el archivo routes.rb en la carpeta /config. En el archivo descomento la parte 
+de root :To> [direccion] (o simplemento root),
+Ademas se necesita borrar el archivo index original en la carpeta public para mi index sea visible
+
+PAra crear un scaffold se hace con la linea de comando: rails generate scaffold [nombre] [lo que contiene ej. nombre: string titulo:string contenido:text]
+Despues de esto rails contruye automaticamente formulario de CRUD.
+
+Despues de esto falta integrar el modelo de datos
+bundle exec rake db:migrate
